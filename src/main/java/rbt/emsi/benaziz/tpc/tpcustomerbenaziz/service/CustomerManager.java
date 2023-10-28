@@ -35,6 +35,7 @@ public class CustomerManager {
     }
 //genere un insert sql dans la bd
 
+    @Transactional
     public void persist(Customer customer) {
         em.persist(customer);
     }
